@@ -1,0 +1,70 @@
+body{
+    overflow: hidden;
+    font-family: 'Lovers Quarrel', cursive;
+}
+#main{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(bg.jpeg);
+    object-fit: cover;
+}
+
+.card{
+height: 30vh;
+width: 25vh;
+/* background-color: aqua; */
+position: absolute;
+left: 50%;
+top:50%;
+transform: translate(-50%,-50%);
+/* border: 2px solid black; */
+background-image: url(paper.webp);
+object-fit:contain;
+object-position: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.paper1{
+    height: 10vh;
+    width: 30vh;
+    box-shadow: 10px 5px 5px #dadada74;
+    font-size: 30px;
+}
+.paper2{
+    font-size: 30px;
+}
+.img1{
+    height: 70%;
+    width: 90%;
+    animation: dhak 2s infinite;
+}
+
+@keyframes dhak {
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.002);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    75%{
+        transform: scale(1.002);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
+}
+.tilt{
+    transform: translate(-50%,-50%) rotateZ(-20deg);
+}
+.tilt2{
+    transform: translate(-50%,-50%) rotateZ(10deg);
+}
+.tilt3{
+    transform: translate(-50%,-50%) rotateZ(-10deg);
+}
